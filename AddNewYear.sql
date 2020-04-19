@@ -12,4 +12,4 @@ print('USE ['+@DBNAME+']
 GO')
 print('Alter Partition Scheme ['+@SCHEMA_NAME+'] NEXT USED [Part_'+@YearPartition+']')
 print('ALTER PARTITION FUNCTION '+@PARTITION_FUNCTION_NAME+'() 
-SPLIT RANGE (N'''+@YearPartition+'-31-01'')')
+SPLIT RANGE (N'''+@YearPartition+'-12-31'')')
